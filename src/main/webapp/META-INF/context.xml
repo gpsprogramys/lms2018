@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true">
+    <!-- Specify a JDBC datasource
+    tells tomcat we have to create a conn pool as per below 
+    settings. JNDI runs with tomcat and this datasource
+    will be registered inside JNDI with name jdbc/synergy-bank-ds. Using this JNDI name we can access data source thorughout app
+       -->
+    <Resource name="jdbc/lms-ds" auth="Container"
+        type="javax.sql.DataSource" username="root" password="mysql@1234"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/hietlms_db"
+        maxActive="100" maxIdle="30" />
+     <WatchedResource>/WEB-INF/classes/log4j.properties</WatchedResource>
+</Context>

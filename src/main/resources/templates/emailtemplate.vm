@@ -1,0 +1,12 @@
+<html>
+<body bgcolor="pink">
+
+Dear $firstName  $lastName
+
+You are most welcome in lms and your profile is created successfully.
+
+Thanks & Regards,
+$location
+<img src="cid:image">
+</body>
+</html>
