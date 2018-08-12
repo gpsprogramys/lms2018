@@ -84,10 +84,24 @@
                   </li>
                   
                   
+                    <li><a href="#">Menu</a>
+                <ul class="dropdown">
+               <li><a href="${pageContext.request.contextPath}/employee/employeeLeaveStatus">Leave Application Status</a></li>
+							<li><a href="${pageContext.request.contextPath}/employee/leaveBalance">Employee Leave Balance</a></li>
+						<li><a	href="${pageContext.request.contextPath}/employee/employeeOnePageLeaveHistory">One Page Leave History</a></li>
+							<li><a href="${pageContext.request.contextPath}/employee/employeeLeaveApplication">Leave Application Form</a></li>
+							<li><a href="${pageContext.request.contextPath}/employee/leaveHistory">Employee Leave History</a></li>
+							<li><a href="${pageContext.request.contextPath}/employee/employeeAttendance">Employee Attendance Status</a></li>
+                 	<li><a href="${pageContext.request.contextPath}/employee/employeeMonthlyAttendanceStatus"s>Employee Monthly Register</a></li>
+                 		<li><a href="${pageContext.request.contextPath}/employee/viewHolidayCalenderEmployee">Holiday Calendar</a></li>
+                 </ul>
+                  </li>
+                  
+                  
                   
               <li><a href="#">Setting</a>
                 <ul class="dropdown">
-               <li><a href="${pageContext.request.contextPath}/employee/changePassword">Change Password</a></li>
+               <li><a href="${pageContext.request.contextPath}/common/changePassword">Change Password</a></li>
 							<li><a href="${pageContext.request.contextPath}/employee/profile">Profile</a></li>
 						<li><a	href="${pageContext.request.contextPath}/employee/viewHolidayCalenderEmployee">Calendar</a></li>
 							<li><a href="#">Leave Reminder</a></li>

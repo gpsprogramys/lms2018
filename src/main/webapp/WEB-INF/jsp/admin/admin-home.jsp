@@ -24,20 +24,20 @@
   <!-- preloader -->
   <div id="preloader">
     <div id="spinner">
-      <img alt="" src="${pageContext.request.contextPath}/images/preloaders/5.gif">
+      <img alt="" src="images/preloaders/5.gif">
     </div>
     <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
   </div>
 
-<%@include file="employee-header.jsp" %>
-<%@include file="employee-section.jsp" %>
+<%@include file="admin-header.jsp" %>
+<%@include file="admin-section.jsp" %>
  <br/><br/>
   
     
             <div class="col-xs-16 col-sm-7 col-md-5 col-lg-3">
               <div class="team-members mb-40">
                 <div class="team-thumb mr-0">
-                  <img src="${pageContext.request.contextPath}/images/team/team-details.jpg" alt="" class="img-fullwidth">
+                  <img src="images/team/team-details.jpg" alt="" class="img-fullwidth">
                 </div>
                 <div class="team-bottom-part border-1px p-15">
                   <h4 class="text-uppercase font-weight-600 m-0 pb-5">Jonathan Adams</h4>
@@ -60,7 +60,7 @@
           
           
              <div class="col-md-8">
-              <h4 class="name font-24 mt-0 mb-0">Employee</h4>
+              <h4 class="name font-24 mt-0 mb-0">Admin</h4>
               <h5 class="mt-5">Web Design</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam vero expedita fugiat illo quasi doloremque, in unde omnis sint assumenda! Quaerat in, reprehenderit corporis voluptatum natus sequi reiciendis ullam. Quam eaque dolorum voluptates cupiditate explicabo.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt culpa dicta quaerat qui recusandae possimus placeat quidem ipsam voluptates similique libero tempore, labore quasi delectus vero alias, consectetur blanditiis eum maxime sunt accusantium ipsa doloribus reiciendis. Ea quod reprehenderit deserunt. Veritatis omnis similique tempora delectus a consequuntur, quis.  Adipisicing elit. Nesciunt culpa dicta quaerat qui recusandae possimus placeat quidem ipsam voluptates similique libero tempore, labore quasi delectus vero alias.</p>

@@ -16,15 +16,15 @@
 
 
 
- <%@include file="../common/css.jsp" %>
- <%@include file="../common/top.jsp" %>
+ <%@include file="css.jsp" %>
+ <%@include file="top.jsp" %>
 </head>
 <body class="">
 <div id="wrapper" class="clearfix">
   <!-- preloader -->
   <div id="preloader">
     <div id="spinner">
-      <img alt="" src="${pageContext.request.contextPath}/images/preloaders/5.gif">
+      <img alt="" src="images/preloaders/5.gif">
     </div>
     <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
   </div>
@@ -37,7 +37,7 @@
             <div class="col-xs-16 col-sm-7 col-md-5 col-lg-3">
               <div class="team-members mb-40">
                 <div class="team-thumb mr-0">
-                  <img src="${pageContext.request.contextPath}/images/team/team-details.jpg" alt="" class="img-fullwidth">
+                  <img src="images/team/team-details.jpg" alt="" class="img-fullwidth">
                 </div>
                 <div class="team-bottom-part border-1px p-15">
                   <h4 class="text-uppercase font-weight-600 m-0 pb-5">Jonathan Adams</h4>
@@ -82,8 +82,8 @@
 
 
   
-  <%@include file="../common/footer.jsp" %>
-   <%@include file="../common/common-js.jsp" %>
+  <%@include file="footer.jsp" %>
+   <%@include file="common-js.jsp" %>
 
 </body>
 

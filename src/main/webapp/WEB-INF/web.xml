@@ -17,7 +17,8 @@
     <error-code>404</error-code>
     <location>/errorPage</location>
   </error-page> -->
-<!--   <filter>
+  <!--  
+  <filter>
     <filter-name>userAuthFilter</filter-name>
     <filter-class>com.bas.common.web.filter.UserAuthFilter</filter-class>
     <init-param>
@@ -40,8 +41,8 @@
   <filter-mapping>
     <filter-name>userAuthFilter</filter-name>
     <url-pattern>/common/*</url-pattern>
-  </filter-mapping> -->
-  
+  </filter-mapping>
+  -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/context/bas-att-spring-context.xml</param-value>

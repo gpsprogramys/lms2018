@@ -1,5 +1,6 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="ff"%>
 <%@ page isELIgnored="false" %>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -43,16 +44,23 @@
    });
    </script>
    
-    <%@ include file="../employee/employee-header.jsp" %>
+    <%@ include file="employee-header.jsp" %>
+
 </head>
 <body class="">
+
+
+
+
+
+
 
 
 <div id="wrapper" class="clearfix">
   <!-- preloader -->
   <div id="preloader">
     <div id="spinner">
-      <img alt="" src="${pageContext.request.contextPath}/images/preloaders/5.gif">
+      <img alt="" src="images/preloaders/5.gif">
     </div>
     <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
   </div>
@@ -141,7 +149,7 @@
 
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
-<script src="${pageContext.request.contextPath}/js/custom.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 

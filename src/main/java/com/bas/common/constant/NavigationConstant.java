@@ -42,7 +42,7 @@ public interface NavigationConstant {
 	////NEW FOR EMPLOYEE
 	final public static String EMPLOYEE_PREFIX_PAGE="WEB-INF/jsp/employee/";
 	final public static String EMPLOYEE_HOME_PAGE="employee-home";
-	final public static String MANAGEMENT_HOME_PAGE="managementHome";
+	final public static String MANAGEMENT_HOME_PAGE="management-home";
 	
 	final public static String USER_SESSION_DATA="user_session_data";
 	final public static String COMMON_PREFIX_PAGE="WEB-INF/jsp/common/";
@@ -59,7 +59,7 @@ public interface NavigationConstant {
 	final public static String FACULTY_EDIT_PAGE="editFaculty";
 	final public static String SHOW_REGISTEREDFACULTY_PAGE="showAllFaculty";
 	final public static String FACULTY_HOME_PAGE="facultyHome";
-	final public static String ADMIN_HOME_PAGE="adminHome";
+	final public static String ADMIN_HOME_PAGE="admin-home";
 	final public static String LEAVE_BALANCE_PAGE="leaveBalance";
 	final public static String ATTEND_STATUS_PAGE="attendanceStatus";
 	final public static String ADMIN_ATTEND_UPDATE_PAGE="adminUpdateAttendance";

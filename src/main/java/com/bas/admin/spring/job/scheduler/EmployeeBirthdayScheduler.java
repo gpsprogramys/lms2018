@@ -30,7 +30,7 @@ public class EmployeeBirthdayScheduler {
 	//https://javahunter.wordpress.com/2011/05/05/cronscheduler-in-spring/
 	//0 0 24 * * ?
 	//0 0 0 * * ?
-	// @Scheduled(cron="*/60 * * * * ?")
+//	 @Scheduled(cron="*/60 * * * * ?")
 	 public void sendBirthdayEmailsToEmployees() {
 	     //write code to fecth all the employees who has birthday today
 		 List<FacultyForm> facultyForms=basFacultyService.findFacultyWithBirthday();

@@ -94,6 +94,32 @@
                 
                 </li>
                 
+                  
+                               <li><a href="#">Menu</a>
+                <ul class="dropdown">
+                
+                     <li><a href="${pageContext.request.contextPath}/admin/hrApproveLeave">Pending Leave Approval(${pendingLeaveCount})</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/showLeaveBalance">Employee Leave Balance</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/findEmployeeOnePageLeaveHistory">One Page Leave History</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/leaveApplication">Leave Application Form</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/searchFacultyDetail">Employees Detail</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/showAllFacultyWithleaveHistory">Employee Leave History</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/adminMarkLwp">Mark LWP</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/adminAttendanceToday">Employee Daily Attendance</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/addEmployees">Add Employees</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/showAllFaculty">Employee Status</a></li>
+                                  <li><a href="${pageContext.request.contextPath}/admin/reporteeManagement">Reportee Management</a></li>
+                            </ul>
+                
+                </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                   <li><a href="#">Message Board</a>
                    <ul class="dropdown">
                                 <li><a href="${pageContext.request.contextPath}/admin/uploadMessageBoard">Post Message</a></li>

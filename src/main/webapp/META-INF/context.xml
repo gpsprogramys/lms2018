@@ -6,7 +6,7 @@
     will be registered inside JNDI with name jdbc/synergy-bank-ds. Using this JNDI name we can access data source thorughout app
        -->
     <Resource name="jdbc/lms-ds" auth="Container"
-        type="javax.sql.DataSource" username="root" password="mysql@1234"
+        type="javax.sql.DataSource" username="root" password="root"
         driverClassName="com.mysql.jdbc.Driver"
         url="jdbc:mysql://localhost:3306/hietlms_db"
         maxActive="100" maxIdle="30" />

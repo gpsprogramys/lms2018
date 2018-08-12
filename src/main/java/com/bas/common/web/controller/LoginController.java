@@ -36,7 +36,7 @@ import com.bas.soap.service.email.EmailSenderThread;
 import com.synergy.bank.employee.service.IEmployeeLMSService;
 
 @Controller //@Component
-@Scope("singleton")
+@Scope("request")
 public class LoginController {
 	
     private static final Log logger = LogFactory.getLog(LoginController.class);
@@ -274,7 +274,7 @@ public class LoginController {
 		}else {
 			model.addAttribute("error","Username and password are not valid!!!");
 			 model.addAttribute(PageTitleContant.PAGE_TITLE, PageTitleContant.PROFILE_COMPLETE_TITLE);
-			return "auth";
+			return NavigationConstant.COMMON_PREFIX_PAGE+NavigationConstant.LOGIN_PAGE;
 		}
 	}
 	

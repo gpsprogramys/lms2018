@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+.ui-widget-header {
+	color: #FFFFFF;
+	background: #66CCFF;
+}
+
+.ui-datepicker th {
+	color: black;
+}
+
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default
+	{
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.ui-state-highlight,.ui-widget-content .ui-state-highlight {
+	background: yellow;
+}
+
+.ui-state-active,.ui-widget-content .ui-state-active {
+	background: yellow;
+}
+
+.ui-priority-secondary,.ui-widget-content .ui-priority-secondary {
+	border:#FFFFFF;
+}
+
+.ui-datepicker-trigger {
+    margin-left : 5px;
+    vertical-align : top;
+  
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #66CCFF;
+	background-image: url('images/ui-icons_d8e7f3_256x240.png');
+	background: #66CCFF;
+	font-weight: normal;
+	color: #212121;
+}
+

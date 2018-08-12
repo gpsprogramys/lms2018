@@ -1,0 +1,179 @@
+@CHARSET "UTF-8";
+
+.input-large {
+	width: 410px;
+	height: 24px !important;
+	margin-bottom: 10px !important;
+	line-height: 30px !important;
+	padding: 11px 19px !important;
+	font-size: 17.5px !important;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.no-margin {
+	margin-top: 15px !important;
+}
+
+.glyphicon-bell:before {
+	content: "\d83d\dd14";
+}
+
+.glyphicon-bookmark:before {
+	content: "\d83d\dd16";
+}
+
+.glyphicon-briefcase:before {
+	content: "\d83d\dcbc";
+}
+
+.glyphicon-calendar:before {
+	content: "\d83d\dcc5";
+}
+
+.glyphicon-camera:before {
+	content: "\d83d\dcf7";
+}
+
+.glyphicon-fire:before {
+	content: "\d83d\dd25";
+}
+
+.glyphicon-lock:before {
+	content: "\d83d\dd12";
+}
+
+.glyphicon-paperclip:before {
+	content: "\d83d\dcce";
+}
+
+.glyphicon-pushpin:before {
+	content: "\d83d\dccc";
+}
+
+.glyphicon-wrench:before {
+	content: "\d83d\dd27";
+}
+
+.input-large[class=input-large] {
+	width: 400px;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.normal-text {
+	/* font-weight: normal !important; */
+	font-weight: normal;
+	font-family: serif;
+	font-size: 20px;
+}
+
+//
+century gothic
+h1 {
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+h3 {
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+
+p, html, input, select, table, td, tr, textarea, option {
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.empcustom {
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+blockquote {
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+pre {
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5667px;
+}
+
+body {
+	font-family: "Lucida Sans";
+}
+
+* {
+	margin: 0px
+}
+
+#searchbox {
+	width: 250px;
+	height: 20px;
+	border: solid 1px #000;
+	padding: 3px;
+	border: solid 1px #000;
+}
+
+#display {
+	width: 250px;
+	display: none;
+	float: right;
+	margin-right: 6px;
+	border-left: solid 1px #dedede;
+	border-right: solid 1px #dedede;
+	border-bottom: solid 1px #dedede;
+	overflow: hidden;
+}
+
+.display_box {
+	padding: 4px;
+	border-top: solid 1px #dedede;
+	font-size: 12px;
+	height: 30px;
+}
+
+/* .display_box:hover {
+	background: #3b5998;
+	color: #FFBBFF;
+} */
+
+/* #shade {
+	background-color: #00CCFF;
+} */

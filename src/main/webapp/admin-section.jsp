@@ -1,6 +1,4 @@
-<!-- Start main-content -->
-  <div class="main-content">
-    <!-- Section: inner-header -->
+   <!-- Section: inner-header -->
     <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="images/bg/bg1.jpg">
       <div class="container pt-120 pb-60">
         <!-- Section Content -->
@@ -17,7 +15,5 @@
           </div>
         </div>
       </div>
-    </section> 
-    </div>
-    
-       
+    </section>
+      

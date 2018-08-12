@@ -230,7 +230,6 @@ public class EmployeeLMSService implements IEmployeeLMSService {
 	}
 
 	@Override
-	@Async
 	public EmployeeLeaveDetailVO findEmployeeLeaveDetail(String eid) {
 		EmployeeLeaveDetailEntity employeeLeaveDetailEntity = iEmployeeLMSDao
 				.findEmployeeLeaveDetail(eid);

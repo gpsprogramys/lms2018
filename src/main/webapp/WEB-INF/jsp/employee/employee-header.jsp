@@ -41,65 +41,99 @@
         <div class="container">
           <nav id="menuzord-right" class="menuzord default theme-colored"><a class="menuzord-brand pull-left flip mt-20 mt-sm-10 mb-sm-20 pt-5" href="index-mp-layout1.html"><img src="images/logo-wide.png" alt=""></a>
             <ul class="menuzord-menu">
-              <li class="active"><a href="${pageContext.request.contextPath}/employee/employee-home">Home</a>
+              <li class="active"><a href="${pageContext.request.contextPath}/admin/adminHome">Home</a>
                  
-                  <li><a href="#">Leave Management</a>
+                 
+                  <li><a href="#">Attendance</a>
                      <ul class="dropdown">
-                       <li><a href="${pageContext.request.contextPath}/employee/leaveBalance">Leave Balance </a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/employee/employeeLeaveApplication">
-									Leave Application</a></li>
-							<li>
-							 <li><a href="${pageContext.request.contextPath}/employee/employeeLeaveStatus">Leave Request Status</a></li>
-							<li class="divider"></li>
-							<li><a
-								href="${pageContext.request.contextPath}/employee/employeeOnePageLeaveHistory">One Page Leave History</a></li>
-							
-							<li><a
-								href="${pageContext.request.contextPath}/employee/leaveHistory">Leave
-									History</a></li>
-							
-							<c:if test="${sessionScope.user_session_data.reportingManager=='yes'}">
-								<li class="divider"></li>
-								
-								<li>
-								
-								<a href="${pageContext.request.contextPath}/employee/managerApproveLeave">Approve
-										Leave Manager</a></li>
-							</c:if>
-							</ul>
+                          <li><a href="${pageContext.request.contextPath}/admin/adminAttendance">Today's Attendance</a></li>
+                            <li><a href="${pageContext.request.contextPath}/admin/manualAttendance">Manual Attendance</a></li>
+                        
+                                 <li><a href="${pageContext.request.contextPath}/admin/viewOneEmployeeAttendance">View One Employee Attendance</a></li>
+                                   <li><a href="${pageContext.request.contextPath}/admin/showDeptMonthlyAttendance">Show Department Wise Monthly Attendance</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/admin/adminUpdateAttendance">Update Attendance</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/admin/adminDeleteAttendance">Delete Attendance</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/admin/empManualRequestAtt">Employee Manual Request Attendance</a></li>
+                                   
+                            </ul>
                       </li>
                
                
-                  <li><a href="#">Attendance Status</a>
+                  <li><a href="#">LMS</a>
                   <ul class="dropdown">
-                  <li><a href="${pageContext.request.contextPath}/employee/employeeAttendance">Monthly Attendance Detail</a></li>
-								<li class="divider"></li>
-							<li><a href="${pageContext.request.contextPath}/employee/employeeMonthlyAttendanceStatus">Monthly Attendance Summary</a></li>
-							<li><a href="${pageContext.request.contextPath}/employee/employeeMonthlyAttStatusWithChart">Monthly Att Status Chart</a></li>
-								<li><a href="${pageContext.request.contextPath}/employee/faculityAttReport">Attendance Report in PDF</a></li>
-								<li><a href="${pageContext.request.contextPath}/employee/employeeManualAttendance">Manual Attendance</a></li>
-								    
-                        </ul>           
+                     <li><a href="${pageContext.request.contextPath}/admin/employeeOnLeave">Employee On Leave</a></li>
+                        		<li><a href="${pageContext.request.contextPath}/admin/showLeaveBalance">Show Leave Balance</a></li>
+                        		<li><a href="${pageContext.request.contextPath}/admin/employeeByDepartment">Show Admin Leave Balance</a></li>
+                        		<li><a href="${pageContext.request.contextPath}/employee/employeeLeaveApplication">Leave Application</a></li> 
+                        		<li><a href="${pageContext.request.contextPath}/admin/hrApproveLeave">Pending Leave Approval</a></li> 
+                        		 <li><a href="${pageContext.request.contextPath}/admin/findEmployeeOnePageLeaveHistory">One Page Leave History</a></li>
+                        		      <li><a href="${pageContext.request.contextPath}/admin/showAllFacultyWithleaveHistory">Employee Leave History</a></li>
+                        		 <li><a href="${pageContext.request.contextPath}/admin/employeeByDepartment">Employee By Department</a></li>
+                        		  <li><a href="${pageContext.request.contextPath}/admin/adminMarkLwp">Mark Employee LWP</a></li>
+                        		  <li><a href="${pageContext.request.contextPath}/admin/empWorkingDays">Working Days</a></li>
+                        	</ul>
                   </li>
                   
                   
                   
-              <li><a href="#">Setting</a>
+              <li><a href="#">Action</a>
                 <ul class="dropdown">
-               <li><a href="${pageContext.request.contextPath}/employee/changePassword">Change Password</a></li>
-							<li><a href="${pageContext.request.contextPath}/employee/profile">Profile</a></li>
-						<li><a	href="${pageContext.request.contextPath}/employee/viewHolidayCalenderEmployee">Calendar</a></li>
-							<li><a href="#">Leave Reminder</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Attendance Reminder</a></li>
-							<li><a href="#">Attendance Summary</a></li>
-                 </ul>
-                  </li>
-          
-          
-      <li><a href="${pageContext.request.contextPath}/common/logout">Logout</a></li>
-          </ul>
+                
+                     <li><a href="${pageContext.request.contextPath}/admin/addHolidayCalendar">Add Holiday Calendar</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/addDepartment">Add Department</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/designations">Add Designation</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/addLeaveReason">Add Leave Reason</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/leaveTypes">Add Leave Type</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/organizationTime">Organization Time</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/viewHolidayCalender">View Holiday Calendar</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/showAllFaculty">Show Employees</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/addEmployees">Add Employees</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/showAllFaculty">Employee Status</a></li>
+                                  <li><a href="${pageContext.request.contextPath}/admin/reporteeManagement">Reportee Management</a></li>
+                            </ul>
+                
+                </li>
+                
+                  
+                               <li><a href="#">Menu</a>
+                <ul class="dropdown">
+                
+                     <li><a href="${pageContext.request.contextPath}/admin/hrApproveLeave">Pending Leave Approval(${pendingLeaveCount})</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/showLeaveBalance">Employee Leave Balance</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/findEmployeeOnePageLeaveHistory">One Page Leave History</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/leaveApplication">Leave Application Form</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/searchFacultyDetail">Employees Detail</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/showAllFacultyWithleaveHistory">Employee Leave History</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/adminMarkLwp">Mark LWP</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/adminAttendanceToday">Employee Daily Attendance</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/addEmployees">Add Employees</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/showAllFaculty">Employee Status</a></li>
+                                  <li><a href="${pageContext.request.contextPath}/admin/reporteeManagement">Reportee Management</a></li>
+                            </ul>
+                
+                </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="#">Message Board</a>
+                   <ul class="dropdown">
+                                <li><a href="${pageContext.request.contextPath}/admin/uploadMessageBoard">Post Message</a></li>
+                                   <li class="divider"></li>	
+                                 <li><a href="${pageContext.request.contextPath}/admin/messageBoardInbox">Message Inbox</a></li>
+                            </ul>
+                  </li>                  
+                  
+                <li><a href="${pageContext.request.contextPath}/common/changePassword">Change Password</a></li>
+                       
+                          <li><a href="${pageContext.request.contextPath}/common/logout">Logout</a></li>  
+                  
+              </ul>    
+                  
           </nav>
         </div>
       </div>

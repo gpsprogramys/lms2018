@@ -5,7 +5,7 @@
     <div class="container pt-60 pb-20">
       <div class="col-sm-6 col-md-3">
         <div class="widget dark">
-          <img alt="" src="images/logo-footer.png">          
+          <img alt="" src="${pageContext.request.contextPath}/images/logo-footer.png">          
           <p class="mt-20">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
           <ul class="list-inline">
             <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone mr-5"></i> <a href="#">123-456-789</a> </li>
@@ -51,21 +51,21 @@
           <h4 class="widget-title line-bottom-theme-colored2">Latest News</h4>
           <div class="latest-posts">
             <article class="post media-post clearfix pb-0 mb-10">
-              <a class="post-thumb" href="#"><img src="images/blog/ln1.jpg" alt=""></a>
+              <a class="post-thumb" href="#"><img src="${pageContext.request.contextPath}/images/blog/ln1.jpg" alt=""></a>
               <div class="post-right">
                 <h5 class="post-title mt-0 mb-5"><a href="#">PHP Learning</a></h5>
                 <p class="post-date mb-0 font-12">Mar 08, 2015</p>
               </div>
             </article>
             <article class="post media-post clearfix pb-0 mb-10">
-              <a class="post-thumb" href="#"><img src="images/blog/ln2.jpg" alt=""></a>
+              <a class="post-thumb" href="#"><img src="${pageContext.request.contextPath}/images/blog/ln2.jpg" alt=""></a>
               <div class="post-right">
                 <h5 class="post-title mt-0 mb-5"><a href="#">Web Development</a></h5>
                 <p class="post-date mb-0 font-12">Mar 08, 2015</p>
               </div>
             </article>
             <article class="post media-post clearfix pb-0 mb-10">
-              <a class="post-thumb" href="#"><img src="images/blog/ln3.jpg" alt=""></a>
+              <a class="post-thumb" href="#"><img src="${pageContext.request.contextPath}/images/blog/ln3.jpg" alt=""></a>
               <div class="post-right">
                 <h5 class="post-title mt-0 mb-5"><a href="#">Spoken English</a></h5>
                 <p class="post-date mb-0 font-12">Mar 08, 2015</p>
