@@ -5,29 +5,29 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd 
 	http://www.springframework.org/schema/aop 
-	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd 
+	http://www.springframework.org/schema/aop/spring-aop.xsd 
 	http://www.springframework.org/schema/context
-	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/context/spring-context.xsd
 	http://www.springframework.org/schema/tx
-    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
-     http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+     http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
 	<!-- spring is not creating datasource here server is doing it -->
 	
 	<!-- here this is doing jndi lookup for datasource and assigning it to 
 	spring container
 	 -->
-<!-- 	<jee:jndi-lookup id="sdatasource" jndi-name="jdbc/lms-ds"/> -->
+	<jee:jndi-lookup id="sdatasource" jndi-name="jdbc/lms-ds"/>
 
 	<!-- This object will give us a connection -->
 	
 	
-    <bean id="sdatasource"
+    <!-- <bean id="sdatasource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/hietlms_db" />
+		<property name="url" value="jdbc:mysql://localhost:8080/lms01012016" />
 		<property name="username" value="root" />
-		<property name="password" value="mysql@1234"/>
-	</bean>  
+		<property name="password" value="root"/>
+	</bean>   -->
 
 </beans>
 	

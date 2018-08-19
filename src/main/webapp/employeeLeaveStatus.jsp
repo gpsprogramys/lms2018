@@ -41,7 +41,7 @@
     <!-- Section: Schedule -->
      <ff:form action="${pageContext.request.contextPath}/employee/adminApproveLeave"
 					method="post" commandName="facultyAttendStatusVO">
-    <section id="schedule" class="divider parallax layer-overlay overlay-white-8" data-bg-img="images/bg/bg1.jpg">
+    <section id="schedule" class="divider parallax layer-overlay overlay-white-8" data-bg-img="${pageContext.request.contextPath}/images/bg/bg1.jpg">
       <div class="container pt-100 pb-80">
         <div class="section-content">
           <div class="row">

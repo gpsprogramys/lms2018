@@ -101,7 +101,7 @@
                      <li><a href="${pageContext.request.contextPath}/admin/hrApproveLeave">Pending Leave Approval(${pendingLeaveCount})</a></li>
                                 <li><a href="${pageContext.request.contextPath}/admin/showLeaveBalance">Employee Leave Balance</a></li>
                                 <li><a href="${pageContext.request.contextPath}/admin/findEmployeeOnePageLeaveHistory">One Page Leave History</a></li>
-                                <li><a href="${pageContext.request.contextPath}/admin/leaveApplication">Leave Application Form</a></li>
+                                <li><a href="${pageContext.request.contextPath}/employee/employeeLeaveApplication">Leave Application Form</a></li>
                                 <li><a href="${pageContext.request.contextPath}/admin/searchFacultyDetail">Employees Detail</a></li>
                                 <li><a href="${pageContext.request.contextPath}/admin/showAllFacultyWithleaveHistory">Employee Leave History</a></li>
                                 <li><a href="${pageContext.request.contextPath}/admin/adminMarkLwp">Mark LWP</a></li>

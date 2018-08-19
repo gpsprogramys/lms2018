@@ -263,8 +263,6 @@ public class LoginController {
 	 */
 	@RequestMapping(value="/auth",method=RequestMethod.POST)
 	public String validateUser(@RequestParam("username") String username,@RequestParam("password") String password,HttpSession session,Model model){
-		//ApplicationContext applicationContext=new ClassPathXmlApplicationContext("bas-att-spring-context.xml");
-		//LoginDao loginDao=(LoginDao)applicationContext.getBean("LoginDaoImpl");
 		LoginEntity loginEntity=loginDao.validateUser(username, password);
 		if(loginEntity!=null){
 			LoginForm form=new LoginForm();

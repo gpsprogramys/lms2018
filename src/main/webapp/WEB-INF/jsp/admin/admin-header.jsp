@@ -39,7 +39,9 @@
     <div class="header-nav">
       <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
         <div class="container">
-          <nav id="menuzord-right" class="menuzord default theme-colored"><a class="menuzord-brand pull-left flip mt-20 mt-sm-10 mb-sm-20 pt-5" href="index-mp-layout1.html"><img src="images/logo-wide.png" alt=""></a>
+          <nav id="menuzord-right" class="menuzord default theme-colored"><a class="menuzord-brand pull-left flip mt-20 mt-sm-10 mb-sm-20 pt-5" href="index-mp-layout1.html">
+          <img src="${pageContext.request.contextPath}/images/logo-wide.png" alt=""></a>
+         
             <ul class="menuzord-menu">
               <li class="active"><a href="${pageContext.request.contextPath}/admin/adminHome">Home</a>
                  
@@ -94,6 +96,33 @@
                 
                 </li>
                 
+                  
+                               <li><a href="#">Menu</a>
+                <ul class="dropdown">
+                  <li><a href="${pageContext.request.contextPath}/common/changePassword">Change Password</a></li>
+                       
+                     <li><a href="${pageContext.request.contextPath}/admin/hrApproveLeave">Pending Leave Approval(${pendingLeaveCount})</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/showLeaveBalance">Employee Leave Balance</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/findEmployeeOnePageLeaveHistory">One Page Leave History</a></li>
+                                <li><a href="${pageContext.request.contextPath}/employee/employeeLeaveApplication">Leave Application Form</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/searchFacultyDetail">Employees Detail</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/showAllFacultyWithleaveHistory">Employee Leave History</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/adminMarkLwp">Mark LWP</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/adminAttendanceToday">Employee Daily Attendance</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/addEmployees">Add Employees</a></li>
+                                 <li><a href="${pageContext.request.contextPath}/admin/showAllFaculty">Employee Status</a></li>
+                                  <li><a href="${pageContext.request.contextPath}/admin/reporteeManagement">Reportee Management</a></li>
+                            </ul>
+                
+                </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                   <li><a href="#">Message Board</a>
                    <ul class="dropdown">
                                 <li><a href="${pageContext.request.contextPath}/admin/uploadMessageBoard">Post Message</a></li>
@@ -101,10 +130,7 @@
                                  <li><a href="${pageContext.request.contextPath}/admin/messageBoardInbox">Message Inbox</a></li>
                             </ul>
                   </li>                  
-                  
-                <li><a href="${pageContext.request.contextPath}/common/changePassword">Change Password</a></li>
-                       
-                          <li><a href="${pageContext.request.contextPath}/common/logout">Logout</a></li>  
+                             <li><a href="${pageContext.request.contextPath}/common/logout">Logout</a></li>  
                   
               </ul>    
                   

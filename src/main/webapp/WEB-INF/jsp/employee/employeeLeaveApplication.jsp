@@ -1,4 +1,4 @@
-<!-- HR LEAVE APPLICATION FORM - For All Employees -->
+ <!-- HR LEAVE APPLICATION FORM - For All Employees -->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="ff"%>
 <!DOCTYPE html>
@@ -73,32 +73,35 @@
   <!-- preloader -->
   <div id="preloader">
     <div id="spinner">
-      <img alt="" src="images/preloaders/5.gif">
+      <img alt="" src="${pageContext.request.contextPath}/images/preloaders/5.gif">
     </div>
     <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
   </div>
 
-<%@include file="/admin-header.jsp" %>
-<section style="">
-<div class="container">
+<%@include file="employee-header.jsp" %>
+						<section style=""> 
+						
+						<div class="container">
 			<br /> <span
 				style="color: blue; font-weight: bold; margin-left: -22px;"
 				id="applicationMessageId">${applicationMessage}</span> <span
 				style="color: red; font-weight: bold; margin-left: -22px;"
 				id="applicationMessageId">${messageStatus.warning}</span>
+					<h2 style="color:black;"><center>Employee Leave Application Form</center></h2>
+			<br/><br/>
 			<div class="row">
 				<div class="col-md-12">
 					<ff:form
 						action="${pageContext.request.contextPath}/admin/employeeLeaveApplication"
 						id="leaveForm" commandName="employeeLeaveRequestForm">
-						<input type="hidden" name="empName" id="empName" value="${employeeLeaveDetailVO.name}"/>
+												<input type="hidden" name="empName" id="empName" value="${employeeLeaveDetailVO.name}"/>
 						<input type="hidden" name="employeeId" id="employeeId" value="${employeeLeaveDetailVO.eid}"/>
 						<input type="hidden" name="managerId" id="managerId" value="${employeeLeaveDetailVO.managerId}"/>
 						<input type="hidden" name="hrManagerId" id="hrManagerId" value="${employeeLeaveDetailVO.hrid}"/>
 						<input type="hidden" name="reportingManager" id="reportingManager" value="${employeeLeaveDetailVO.managerName}"/>
 						<input type="hidden" name="department" id="department" value="${employeeLeaveDetailVO.department}"/>
 						<input type="hidden" name="slDate" id="slDate"  value="${employeeLeaveDetailVO.slDate}"/>
-						<table style="font-size: 13px; margin-left: 7px;">
+						<table style="font-size: 18px; margin-left: 1px;">
 							<tr>
 								<td style="color: black;" align="left"><font
 									style="color: black">Available Leaves:</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -119,10 +122,9 @@
 									</td>
 							</tr>
 						</table>
-	<hr/>
 			
 	<table border="0"
-							style="width: 100%; margin-top: 10px; font-size: 16px;"
+							style="width: 100%; margin-top:5px; font-size: 16px;"
 							class="table">
 							<tr height="25px">
 								<td colspan="1" style="width: 25%; align: left;"><b>Leave
@@ -161,6 +163,8 @@
 	
 
 								</td>
+								
+								
 							<tr height="25px">
 								<td colspan="1" style="align: left;"><b>Leave Type </b> <font
 									color="red">*</font> <ff:select path="leaveType"
@@ -227,6 +231,7 @@
 											<td><b>Mobile:</b> </br> <input type="text" name="mobile"
 												placeholder="(xxx)-xxx-xxxx" id="mobile"
 												style="width: 180px;" value="${employeeLeaveDetailVO.mobile}" class="form-control"/></td>
+											<br/><br/>
 											<td style="width: 180px;"><b>Reporting Manager
 													&nbsp; : </b> <input type="text" name="reportingManager"
 												placeholder="XXXX" id="reportingManager" class="form-control"
@@ -253,8 +258,8 @@
 								</td>
 							</tr>
 							
-							<tr>
-								<td colspan="3" style="width: 10%; align: right;" id="sbm">
+								<tr>
+								<td colspan="3" style=" align: right;" id="sbm" class="btn btn-default">
 									Alternative arrangements :
 									<select class="form-control" style="background-color: #FFFFFF;margin-top: 9px;" id="alternativeArrange" name="alternativeArrange">
 										<option value="NO">No</option>
@@ -287,6 +292,7 @@
 							</tr>
 						</table>
 						<br/>
+					
 					</ff:form>
 				</div>
 			</div>
@@ -813,12 +819,12 @@ function deleteRow(cthis){
 }
 
 </script>
-<div class="modal" id="mocha" aria-hidden="false" style="margin-top: 70px;">
+<div class="modal" id="mocha" aria-hidden="true" style="margin-top: 70px;">
 	<div class="modal-header">
         <a href="javascript:" id="icon-remove"><i class="icon-remove"  aria-hidden="true" ></i></a>
-       <table style="width: 100%;" class="table table-bordered">
+   <table style="width: 65%;" class="table table-bordered">
 												 <tr style="background-color: #FDF100;color:black;">	
-												<th colspan="2">Alertnative Arrangement <img src="${pageContext.request.contextPath}/images/add-user.png" style="height: 32px;"/></th>
+												<th colspan="2">Alertnative Arrangement <img src="${pageContext.request.contextPath}/img/add-user.png" style="height: 32px;"/></th>
 												</tr>
 												   <tr style="height: 20px;">
 										            <td>Date Of Arrange</td>
@@ -870,8 +876,7 @@ function deleteRow(cthis){
 										        
 										           <tr>
 										            <td>&nbsp;</td>
-										           <td style="text-align: right;">	
-										           <input type="button" value="Add Arrangement" class="btn btn-primary"   id="addAlertnativeArrBt" /></td>
+										           <td style="text-align: right;">	<input type="button" value="Add Arrangement" class="btn btn-primary"   id="addAlertnativeArrBt" /></td>
 										        </tr>						
 										</table>
     </div>
